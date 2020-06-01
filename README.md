@@ -24,7 +24,7 @@ Client and server are installed automatically with the script you can find on qb
   onOff       7       "Interval1"           [ bistabielId=6 ]
   thermostat  8       "Thermostat1"         [ thermostatId=7 ]
   scene       9       "Scene1"              [ sceneId=1 ]
-  co2			      10	     "Productie"		         [ co2Id=26 ]
+  co2			   10	     "Productie"		         [ co2Id=26 ]
  } 
  ```
  
@@ -35,14 +35,18 @@ Client and server are installed automatically with the script you can find on qb
  ```
  //dimmer
  Dimmer              dimmer             {channel="qbus:dimmer:CTD1:1:brightness"}
- //bistabiel, timers, mono, interval, scene
+ 
+ //bistabiel, timers, mono, interval
  Switch              Bistabiel1         {channel="qbus:onOff:CTD1:2:switch"}
+ 
  //thermostat
  Number:Temperature  thSP"[%.1f °C]"    {channel="qbus:thermostat:CTD1:8:setpoint"}
  Number:Temperature	 thCT"[%.1f °C]"    {channel="qbus:thermostat:CTD1:8:measured"}
  Number              thMODE             {channel="qbus:thermostat:CTD1:8:mode",ihc="0x33c311" , autoupdate="true"}
+ 
  //scene
- Switch     Toonzaal230V                 {channel="qbus:scene:CTD1:36:scene"}
+ Switch     Toonzaal230V                {channel="qbus:scene:CTD1:36:scene"}
+ 
  //CO2
  Number				ProductieCO2                 {channel="qbus:co2:CTD1:100:co2"}
  ```

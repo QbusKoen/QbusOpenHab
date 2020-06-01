@@ -14,7 +14,7 @@ Client and server are installed automatically with the script you can find on qb
  ## Example files
  ### Things
  ```
- Bridge qbus:bridge:CTD1 [ addr="localhost", port=2004, refresh=300 ] {\n
+ Bridge qbus:bridge:CTD1  [ addr="localhost", port=8447, refresh=300, sn="000001" ] {\n
   dimmer      1       "Dimmer1"             [ dimmerId=1 ]
   onOff       2       "Bistabiel1"          [ bistabielId=2 ]
   onOff       3       "Timer1"              [ bistabielId=3 ]

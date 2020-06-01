@@ -24,7 +24,7 @@ Client and server are installed automatically with the script you can find on qb
   onOff       7       "Interval1"           [ bistabielId=6 ]
   thermostat  8       "Thermostat1"         [ thermostatId=7 ]
   scene       9       "Scene1"              [ sceneId=1 ]
-  co2         10	     "Productie"		         [ co2Id=26 ]
+  co2         10	     "Productie"           [ co2Id=26 ]
  } 
  ```
  

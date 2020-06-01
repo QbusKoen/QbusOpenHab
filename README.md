@@ -1,5 +1,5 @@
 # QbusOpenHab
- This is the openHAB test binding for Qbus.
+ This is the openHAB setup for Qbus.
  The binding can't communicate directly to the Qbus controller but uses a client server application.
  
  ## Prerequieries
@@ -9,7 +9,7 @@
 Client and server are installed automatically with the script you can find on qbusforum.be
  
  ## JAR file
- You can download the JAR file to /usr/share/openhab2/addons/ to become available in the openHAB inbox
+ You can download the JAR file to /usr/share/openhab2/addons/ to become available in the openHAB inbox. This is temporaraly necessairy until the binding is released by openHAB.
  
  ## Example files
  ### Things

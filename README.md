@@ -26,7 +26,7 @@ Client and server are installed automatically with the script you can find on qb
   scene       9       "Scene1"              [ sceneId=1 ]
   co2         10	     "Productie"           [ co2Id=26 ]
   blind       11	     "Meeting1"           [ blindId=27 ]
-  shutter       12	     "Meeting2"           [ rolId=28 ]
+  shutter     12	     "Meeting2"           [ rolId=28 ]
  } 
  ```
  

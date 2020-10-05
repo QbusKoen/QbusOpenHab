@@ -25,8 +25,7 @@ Client and server are installed automatically with the script you can find on qb
   thermostat  8       "Thermostat1"         [ thermostatId=7 ]
   scene       9       "Scene1"              [ sceneId=1 ]
   co2         10	     "Productie"           [ co2Id=26 ]
-  blind       11	     "Meeting1"           [ blindId=27 ]
-  shutter     12	     "Meeting2"           [ rolId=28 ]
+  rollershutter       11	     "Meeting1"           [ rollershutter=27 ]
  } 
  ```
  
@@ -47,10 +46,13 @@ Client and server are installed automatically with the script you can find on qb
  Number              thMODE             {channel="qbus:thermostat:CTD1:8:mode",ihc="0x33c311" , autoupdate="true"}
  
  //scene
- Switch     Toonzaal230V                {channel="qbus:scene:CTD1:36:scene"}
+ Switch     Toonzaal230V                {channel="qbus:scene:CTD1:9:scene"}
  
  //CO2
- Number				ProductieCO2                 {channel="qbus:co2:CTD1:100:co2"}
+ Number				ProductieCO2                 {channel="qbus:co2:CTD1:10:co2"}
+ 
+ Rollershutter      Meeting1     {channel="qbus:rollershutter:CTD1:11::rollershutter"}
+ Slatcontrol        Meeting1     {channel="qbus:rollershutter:CTD1:11:slats"}
  
  
  ```

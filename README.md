@@ -25,6 +25,8 @@ Client and server are installed automatically with the script you can find on qb
   thermostat  8       "Thermostat1"         [ thermostatId=7 ]
   scene       9       "Scene1"              [ sceneId=1 ]
   co2         10	     "Productie"           [ co2Id=26 ]
+  blind       11	     "Meeting1"           [ blindId=27 ]
+  shutter       12	     "Meeting2"           [ rolId=28 ]
  } 
  ```
  
@@ -49,4 +51,6 @@ Client and server are installed automatically with the script you can find on qb
  
  //CO2
  Number				ProductieCO2                 {channel="qbus:co2:CTD1:100:co2"}
+ 
+ 
  ```
